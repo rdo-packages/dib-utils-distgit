@@ -3,7 +3,7 @@
 Name:       dib-utils
 Summary:    Pieces of diskimage-builder that are useful standalone
 Version:    0.0.0
-Release:    1%{?dist}
+Release:    2%{?dist}
 License:    ASL 2.0
 Group:      System Environment/Base
 # The long-term direction upstream is to split these files into their own
@@ -34,5 +34,8 @@ diskimage-builder and its dependencies.
 %{_bindir}/dib-run-parts
 
 %changelog
+* Sat Jun 07 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.0.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
+
 * Mon Apr 28 2014 Ben Nemec <bnemec@redhat.com> - 0.0.0-1
 - Initial package creation

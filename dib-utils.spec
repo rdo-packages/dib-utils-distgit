@@ -1,13 +1,18 @@
 Name:       dib-utils
 Summary:    Pieces of diskimage-builder that are useful standalone
 Version:    0.0.6
-Release:    1%{?dist}
+Release:    2%{?dist}
 License:    ASL 2.0
 Group:      System Environment/Base
 URL:        https://git.openstack.org/cgit/openstack/dib-utils
 Source0:    http://tarballs.openstack.org/dib-utils/dib-utils-%{version}.tar.gz
 
 BuildArch: noarch
+
+BuildRequires: python2-devel
+BuildRequires: python-setuptools
+BuildRequires: python-d2to1
+BuildRequires: python-pbr
 
 Conflicts: diskimage-builder < 0.1.15
 
@@ -32,6 +37,9 @@ diskimage-builder and its dependencies.
 %{python_sitelib}/dib_utils*
 
 %changelog
+* Wed Sep 17 2014 James Slagle <jslagle@redhat.com> - 0.0.6-2
+- Add python BuildRequires
+
 * Wed Sep 17 2014 James Slagle <jslagle@redhat.com> - 0.0.6-1
 - Rebase on upstream dib-utils.
 

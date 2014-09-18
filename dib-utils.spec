@@ -1,7 +1,7 @@
 Name:       dib-utils
 Summary:    Pieces of diskimage-builder that are useful standalone
 Version:    0.0.6
-Release:    2%{?dist}
+Release:    3%{?dist}
 License:    ASL 2.0
 Group:      System Environment/Base
 URL:        https://git.openstack.org/cgit/openstack/dib-utils
@@ -41,6 +41,9 @@ diskimage-builder and its dependencies.
 %{python_sitelib}/dib_utils*
 
 %changelog
+* Thu Sep 18 2014 James Slagle <jslagle@redhat.com> - 0.0.6-3
+- Add patch to update dib-run-parts to fix sourcing of environment.d files
+
 * Wed Sep 17 2014 James Slagle <jslagle@redhat.com> - 0.0.6-2
 - Add python BuildRequires
 

@@ -1,4 +1,4 @@
-From d770e19fec4269e547ec08a1ebdee511f8d50639 Mon Sep 17 00:00:00 2001
+From e7f3edab66f55c8bc8cbb26e8dbbae0aa978f088 Mon Sep 17 00:00:00 2001
 From: James Slagle <jslagle@redhat.com>
 Date: Thu, 18 Sep 2014 09:40:34 -0400
 Subject: [PATCH] Update dib-run-parts

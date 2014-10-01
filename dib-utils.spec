@@ -7,8 +7,6 @@ Group:      System Environment/Base
 URL:        https://git.openstack.org/cgit/openstack/dib-utils
 Source0:    http://tarballs.openstack.org/dib-utils/dib-utils-%{version}.tar.gz
 
-Patch0001: 0001-Update-dib-run-parts.patch
-
 BuildArch: noarch
 
 BuildRequires: python2-devel
@@ -25,8 +23,6 @@ diskimage-builder and its dependencies.
 
 %prep
 %setup -q -n %{name}-%{version}
-
-%patch0001 -p1
 
 %build
 %{__python} setup.py build

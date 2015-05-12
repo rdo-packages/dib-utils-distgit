@@ -1,6 +1,6 @@
 Name:       dib-utils
 Summary:    Pieces of diskimage-builder that are useful standalone
-Version:    0.0.8
+Version:    0.0.9
 Release:    1%{?dist}
 License:    ASL 2.0
 Group:      System Environment/Base
@@ -37,6 +37,9 @@ diskimage-builder and its dependencies.
 %{python_sitelib}/dib_utils*
 
 %changelog
+* Tue May 12 2015 Mike Burns <mburns@redhat.com> 0.0.9-1
+- Update to upstream 0.0.9
+
 * Wed Oct 15 2014 James Slagle <jslagle@redhat.com> 0.0.8-1
 - Update to upstream 0.0.8
 

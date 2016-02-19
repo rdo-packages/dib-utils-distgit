@@ -1,7 +1,7 @@
 Name:       dib-utils
 Summary:    Pieces of diskimage-builder that are useful standalone
 Version:    XXX
-Release:    XXX{?dist}
+Release:    XXX
 License:    ASL 2.0
 Group:      System Environment/Base
 URL:        https://git.openstack.org/cgit/openstack/dib-utils

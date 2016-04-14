@@ -1,5 +1,5 @@
-# UUID          Group Name
-6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
-6c6f42aaa6677139bf5f345f0bb011e482b11066       	dib-utils-distgit-core
-85844ed8f19226c9f360982b3790865b3d151384        	dib-utils-distgit-ptl
-global:Registered-Users		Registered Users
+# UUID                                  	Group Name
+#
+6c6f42aaa6677139bf5f345f0bb011e482b11066	dib-utils-distgit-core
+85844ed8f19226c9f360982b3790865b3d151384	openstack/dib-utils-distgit-ptl
+global:Registered-Users                 	Registered Users

@@ -37,23 +37,3 @@ diskimage-builder and its dependencies.
 %{python_sitelib}/dib_utils*
 
 %changelog
-* Wed Oct 15 2014 James Slagle <jslagle@redhat.com> 0.0.8-1
-- Update to upstream 0.0.8
-
-* Wed Oct 01 2014 James Slagle <jslagle@redhat.com> 0.0.7-1
-- Update to upstream 0.0.7
-
-* Thu Sep 18 2014 James Slagle <jslagle@redhat.com> - 0.0.6-3
-- Add patch to update dib-run-parts to fix sourcing of environment.d files
-
-* Wed Sep 17 2014 James Slagle <jslagle@redhat.com> - 0.0.6-2
-- Add python BuildRequires
-
-* Wed Sep 17 2014 James Slagle <jslagle@redhat.com> - 0.0.6-1
-- Rebase on upstream dib-utils.
-
-* Sat Jun 07 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.0.0-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
-
-* Mon Apr 28 2014 Ben Nemec <bnemec@redhat.com> - 0.0.0-1
-- Initial package creation

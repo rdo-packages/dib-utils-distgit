@@ -5,7 +5,7 @@ Release:    XXX
 License:    ASL 2.0
 Group:      System Environment/Base
 URL:        https://git.openstack.org/cgit/openstack/dib-utils
-Source0:    http://tarballs.openstack.org/dib-utils/dib-utils-%{version}.tar.gz
+Source0:    https://tarballs.openstack.org/dib-utils/dib-utils-%{version}.tar.gz
 
 BuildArch: noarch
 

@@ -1,3 +1,4 @@
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 Name:       dib-utils
 Summary:    Pieces of diskimage-builder that are useful standalone
 Version:    XXX

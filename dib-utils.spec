@@ -1,3 +1,4 @@
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 Name:       dib-utils
 Summary:    Pieces of diskimage-builder that are useful standalone
 Version:    XXX
@@ -5,7 +6,7 @@ Release:    XXX
 License:    ASL 2.0
 Group:      System Environment/Base
 URL:        https://git.openstack.org/cgit/openstack/dib-utils
-Source0:    https://tarballs.openstack.org/dib-utils/dib-utils-%{version}.tar.gz
+Source0:    https://tarballs.openstack.org/dib-utils/dib-utils-%{upstream_version}.tar.gz
 
 BuildArch: noarch
 

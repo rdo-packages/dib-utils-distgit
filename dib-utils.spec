@@ -11,9 +11,9 @@ Source0:    https://tarballs.openstack.org/dib-utils/dib-utils-%{upstream_versio
 BuildArch: noarch
 
 BuildRequires: python2-devel
-BuildRequires: python-setuptools
+BuildRequires: python2-setuptools
 BuildRequires: python-d2to1
-BuildRequires: python-pbr
+BuildRequires: python2-pbr
 
 Conflicts: diskimage-builder < 0.1.15
 

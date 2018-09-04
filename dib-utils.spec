@@ -1,3 +1,16 @@
+# Macros for py2/py3 compatibility
+%if 0%{?fedora} || 0%{?rhel} > 7
+%global pydefault 3
+%else
+%global pydefault 2
+%endif
+
+%global pydefault_bin python%{pydefault}
+%global pydefault_sitelib %python%{pydefault}_sitelib
+%global pydefault_install %py%{pydefault}_install
+%global pydefault_build %py%{pydefault}_build
+# End of macros for py2/py3 compatibility
+
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 Name:       dib-utils
 Summary:    Pieces of diskimage-builder that are useful standalone
@@ -10,10 +23,14 @@ Source0:    https://tarballs.openstack.org/dib-utils/dib-utils-%{upstream_versio
 
 BuildArch: noarch
 
-BuildRequires: python2-devel
-BuildRequires: python2-setuptools
+BuildRequires: python%{pydefault}-devel
+BuildRequires: python%{pydefault}-setuptools
+BuildRequires: python%{pydefault}-pbr
+%if %{pydefault} == 2
 BuildRequires: python-d2to1
-BuildRequires: python2-pbr
+%else
+BuildRequires: python%{pydefault}-d2to1
+%endif
 
 Conflicts: diskimage-builder < 0.1.15
 
@@ -26,15 +43,15 @@ diskimage-builder and its dependencies.
 %setup -q -n %{name}-%{upstream_version}
 
 %build
-%{__python} setup.py build
+%{pydefault_build}
 
 %install
-%{__python} setup.py install -O1 --skip-build --root=%{buildroot}
+%{pydefault_install}
 
 
 %files
 %doc README.md
 %{_bindir}/dib-run-parts
-%{python_sitelib}/dib_utils*
+%{pydefault_sitelib}/dib_utils*
 
 %changelog

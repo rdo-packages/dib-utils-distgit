@@ -1,16 +1,3 @@
-# Macros for py2/py3 compatibility
-%if 0%{?fedora} || 0%{?rhel} > 7
-%global pyver 3
-%else
-%global pyver 2
-%endif
-
-%global pyver_bin python%{pyver}
-%global pyver_sitelib %python%{pyver}_sitelib
-%global pyver_install %py%{pyver}_install
-%global pyver_build %py%{pyver}_build
-# End of macros for py2/py3 compatibility
-
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 Name:       dib-utils
 Summary:    Pieces of diskimage-builder that are useful standalone
@@ -23,9 +10,9 @@ Source0:    https://tarballs.openstack.org/dib-utils/dib-utils-%{upstream_versio
 
 BuildArch: noarch
 
-BuildRequires: python%{pyver}-devel
-BuildRequires: python%{pyver}-setuptools
-BuildRequires: python%{pyver}-pbr
+BuildRequires: python3-devel
+BuildRequires: python3-setuptools
+BuildRequires: python3-pbr
 
 Conflicts: diskimage-builder < 0.1.15
 
@@ -38,15 +25,15 @@ diskimage-builder and its dependencies.
 %setup -q -n %{name}-%{upstream_version}
 
 %build
-%{pyver_build}
+%{py3_build}
 
 %install
-%{pyver_install}
+%{py3_install}
 
 
 %files
 %doc README.md
 %{_bindir}/dib-run-parts
-%{pyver_sitelib}/dib_utils*
+%{python3_sitelib}/dib_utils*
 
 %changelog

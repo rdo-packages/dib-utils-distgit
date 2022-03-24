@@ -1,8 +1,8 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 Name:       dib-utils
 Summary:    Pieces of diskimage-builder that are useful standalone
-Version:    XXX
-Release:    XXX
+Version:    0.0.11
+Release:    1%{?dist}
 License:    ASL 2.0
 Group:      System Environment/Base
 URL:        https://git.openstack.org/cgit/openstack/dib-utils
@@ -37,3 +37,6 @@ diskimage-builder and its dependencies.
 %{python3_sitelib}/dib_utils*
 
 %changelog
+* Thu Mar 24 2022 RDO <dev@lists.rdoproject.org> 0.0.11-1
+- Update to 0.0.11
+
